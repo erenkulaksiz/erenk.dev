@@ -30,8 +30,8 @@ const Project = ({ project }) => {
                 </a>
             </Link>}
             {project?.contacts?.map((projectContact, index) => (
-                <Link href={projectContact.url} passHref>
-                    <a key={index} className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" target="_blank">
+                <Link href={projectContact.url} passHref key={index}>
+                    <a className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" target="_blank">
                         <span>{projectContact.icon}</span>
                         <span>{projectContact.title}</span>
                     </a>
