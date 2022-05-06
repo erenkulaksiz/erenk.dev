@@ -23,7 +23,7 @@ const Project = ({ project, ...rest }) => {
         <div className="flex flex-row gap-2 items-center mt-4">
             {project.android && <Link href={project.androidURL} passHref>
                 <a target="_blank">
-                    <img src={project.android} className="h-10 hover:opacity-75 transition-all ease-in-out" />
+                    <img src={project.android} className="h-10 hover:opacity-75 transition-all ease-in-out object-contain" />
                 </a>
             </Link>}
             {project.link && <Link href={project.linkURL} passHref>

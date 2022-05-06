@@ -18,9 +18,6 @@ const Landing = (props) => {
       new LocomotiveScroll.default({
         el: containerRef.current,
         smooth: true,
-        smartphone: {
-          smooth: true,
-        },
         tablet: {
           smooth: true,
         }
@@ -48,7 +45,7 @@ const Landing = (props) => {
           <h1 className="font-extrabold text-4xl sm:text-6xl">
             {constants.landing.title}
           </h1>
-          <h2 className="text-lg sm:text-3xl mt-4 text-neutral-700">
+          <h2 className="text-md sm:text-3xl mt-4 text-neutral-700">
             {constants.landing.desc}
             {constants.landing.descAttr && <Link href={constants.landing.descAttrLink} passHref>
               <a className="ml-1 text-blue-600 font-bold" target="_blank">
@@ -74,14 +71,14 @@ const Landing = (props) => {
         </div>
       </main>
       <div
-        className="flex flex-col items-center max-w-[1688px] w-full relative pb-32"
+        className="flex flex-col items-center max-w-[1688px] w-full relative pb-32 mt-12"
       >
         <div
           className="flex flex-col w-9/12 gap-4"
           data-scroll
           data-scroll-speed="6"
         >
-          <h1 className="text-4xl font-bold mb-8">Personal Projects</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-0 sm:mb-8">Personal Projects</h1>
           {constants.landing.projects.map((project, index) =>
             <Project
               project={project}
@@ -92,7 +89,7 @@ const Landing = (props) => {
             <a target="_blank" className="bg-neutral-200/50 group hover:-translate-y-1 overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative">
               <h2 className="uppercase text-2xl">More to come</h2>
               <div className="mt-2">
-                These are just my small projects yet. Bigger ones are on their way! Theres still little projects i am working on GitHub.
+                These are just my small projects yet. Bigger ones are on their way! Also theres little projects i am working on GitHub which you can visit them by clicking this card.
               </div>
               <div className="absolute right-6 top-6">
                 <ArrowUpRightIcon width={16} height={16} className="fill-neutral-700" />
@@ -102,7 +99,7 @@ const Landing = (props) => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full mb-56"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full mb-48"
       >
         <div className="flex flex-col w-9/12"
           data-scroll
