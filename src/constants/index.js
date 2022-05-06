@@ -17,7 +17,7 @@ export const constants = {
         githubURL: "https://github.com/erenkulaksiz",
         writerStrings: [
             `${writerHighlight("I love")} React since 2020`,
-            `${writerHighlight("I write JavaScript")} since 2019`,
+            `${writerHighlight("I'm writing JavaScript")} since 2019`,
             `${writerHighlight("I always loved and designed")} eye catching designs`
         ],
         contactList: [
@@ -93,6 +93,27 @@ export const constants = {
                     url: "https://github.com/erenkulaksiz/Notal",
                     icon: <GitHubIcon width={20} height={20} fill="currentColor" />
                 }],
+            }
+        ],
+        workedprojects: [
+            {
+                title: "Neepay",
+                desc: "Send and recieve money easly.",
+                theme: {
+                    color: "#b5800d",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
+                tags: ["Android", "iOS", "Banking", "Application"],
+                link: "neepay.co",
+                linkURL: "https://neepay.co/",
+                image: "https://gcdn.bionluk.com/uploads/order/75dfa497-2d0b-464a-98ed-c74b8c7092d4.png",
+                contacts: [{
+                    title: "Screenshots",
+                    id: "screenshots",
+                    url: "https://drive.google.com/drive/folders/1X5E5iZJI5yePX8Z5h1pWuXzDfwSl2Rgf"
+                }]
             }
         ]
     }

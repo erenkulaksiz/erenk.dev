@@ -9,5 +9,9 @@
     @apply selection:bg-pink-700/50 selection:dark:bg-pink-900/50;
     @apply subpixel-antialiased;
     @apply bg-white;
+    @apply dark:bg-black;
+    @apply transition-colors;
+    @apply ease-in-out;
+    @apply duration-300;
   }
 }

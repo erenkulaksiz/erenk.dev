@@ -6,3 +6,5 @@ export { default as BehanceIcon } from "../../public/icons/behance.svg";
 export { default as ArrowUpRightIcon } from "../../public/icons/arrow_upright.svg";
 export { default as ChevronLeftIcon } from "../../public/icons/chevron_left.svg";
 export { default as InstagramIcon } from "../../public/icons/instagram.svg";
+export { default as DarkIcon } from "../../public/icons/dark.svg";
+export { default as LightIcon } from "../../public/icons/light.svg";
