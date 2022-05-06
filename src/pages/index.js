@@ -15,11 +15,10 @@ const Landing = (props) => {
   let scroll = null;
 
   useEffect(() => {
-    if (typeof window === "undefined") {
+    /*if (typeof window === "undefined") {
       return;
     }
-
-    if (scroll) return;
+    */
 
     scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
       new LocomotiveScroll.default({
@@ -77,11 +76,13 @@ const Landing = (props) => {
         </div>
       </main>
       <div
-        className="flex flex-col items-center max-w-[1688px] w-full relative"
-        data-scroll
-        data-scroll-speed="6"
+        className="flex flex-col items-center max-w-[1688px] w-full relative pb-32"
       >
-        <div className="flex flex-col w-9/12 gap-4">
+        <div
+          className="flex flex-col w-9/12 gap-4"
+          data-scroll
+          data-scroll-speed="6"
+        >
           <h1 className="text-4xl font-bold mb-8">Projects</h1>
           {constants.landing.projects.map((project, index) =>
             <Project
@@ -103,11 +104,12 @@ const Landing = (props) => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center max-w-[1688px] w-full pb-32"
-        data-scroll
-        data-scroll-speed="4"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full pb-56"
       >
-        <div className="flex flex-col w-9/12">
+        <div className="flex flex-col w-9/12"
+          data-scroll
+          data-scroll-speed=".6"
+        >
           <h1 className="text-4xl font-bold mb-8">About Me</h1>
           <div className="flex flex-col gap-4 text-lg sm:text-2xl">
             <p>
