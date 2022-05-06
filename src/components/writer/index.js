@@ -12,7 +12,7 @@ const Writer = ({ strings }) => {
 
     return (<span className="text-lg sm:text-3xl mt-4">
         {isSSR ? <div>
-            <span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>I love </span>
+            <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>I love </span>
             <span> React since 2020</span>
         </div> : <Typewriter
             options={{
