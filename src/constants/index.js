@@ -2,7 +2,8 @@ import {
     EmailIcon,
     GitHubIcon,
     TwitterIcon,
-    BehanceIcon
+    BehanceIcon,
+    InstagramIcon
 } from "../icons";
 
 const writerHighlight = (text) => `<span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>${text}</span>`;
@@ -25,6 +26,12 @@ export const constants = {
                 id: "twitter",
                 link: "https://twitter.com/erencode",
                 icon: <TwitterIcon width={20} height={20} fill="currentColor" />
+            },
+            {
+                title: "Instagram",
+                id: "instagram",
+                link: "https://instagram.com/erentr",
+                icon: <InstagramIcon width={20} height={20} fill="currentColor" />
             },
             {
                 title: "GitHub",

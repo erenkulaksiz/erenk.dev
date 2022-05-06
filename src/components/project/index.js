@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { ChevronLeftIcon, LinkIcon } from "../../icons";
 
-const Project = ({ project }) => {
-    return (<div className="group hover:-translate-y-1 overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative" style={{ backgroundColor: project.theme.color }}>
+const Project = ({ project, ...rest }) => {
+    return (<div {...rest} className="group hover:-translate-y-1 overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative" style={{ backgroundColor: project.theme.color }}>
         {project.image && <div className="flex md:hidden items-center mb-4">
             <img src={project.image} className="object-contain w-24" />
         </div>}

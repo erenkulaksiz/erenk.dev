@@ -7,23 +7,25 @@ import { Writer, Contact } from '../components';
 
 import { constants } from '../constants';
 import Project from '../components/project';
-import { ArrowUpRightIcon } from '../icons';
+import { ArrowUpRightIcon, ChevronLeftIcon } from '../icons';
 
-const isServer = typeof window === "undefined";
 
 const Landing = (props) => {
   const containerRef = useRef();
 
   useEffect(() => {
-    if (isServer) return;
-
     let scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
       new LocomotiveScroll.default({
         el: containerRef.current,
-        smooth: true
+        smooth: true,
+        smartphone: {
+          smooth: true,
+        },
+        tablet: {
+          smooth: true,
+        }
       });
     });
-
   }, []);
 
   return (
@@ -40,6 +42,7 @@ const Landing = (props) => {
         className="flex flex-col items-center justify-center h-screen max-w-[1688px] w-full"
         data-scroll-speed=".6"
         data-scroll
+        id="main"
       >
         <div className="flex flex-col w-9/12">
           <h1 className="font-extrabold text-4xl sm:text-6xl">
@@ -57,13 +60,17 @@ const Landing = (props) => {
             strings={constants.landing.writerStrings}
           />
         </div>
-        <div className="flex flex-row mt-6 sm:mt-12 w-9/12 gap-4 text-md sm:text-xl flex-wrap">
+        <div className="flex flex-row mt-6 sm:mt-12 w-9/12 gap-6 text-sm sm:text-xl flex-wrap">
           {constants.landing.contactList.map((contact, index) =>
             <Contact
               contact={contact}
               key={index}
             />
           )}
+        </div>
+        <div className="cursor-pointer flex flex-col absolute left-0 right-0 bottom-4 items-center animate-pulse" data-scroll data-scroll-speed="4" data-scroll-target="#main">
+          <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
+          <span className="text-sm">Scroll to view more</span>
         </div>
       </main>
       <div
@@ -74,7 +81,7 @@ const Landing = (props) => {
           data-scroll
           data-scroll-speed="6"
         >
-          <h1 className="text-4xl font-bold mb-8">Projects</h1>
+          <h1 className="text-4xl font-bold mb-8">Personal Projects</h1>
           {constants.landing.projects.map((project, index) =>
             <Project
               project={project}
@@ -85,7 +92,7 @@ const Landing = (props) => {
             <a target="_blank" className="bg-neutral-200/50 group hover:-translate-y-1 overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative">
               <h2 className="uppercase text-2xl">More to come</h2>
               <div className="mt-2">
-                These are just my biggest projects yet. Theres still little projects i am working on GitHub.
+                These are just my small projects yet. Bigger ones are on their way! Theres still little projects i am working on GitHub.
               </div>
               <div className="absolute right-6 top-6">
                 <ArrowUpRightIcon width={16} height={16} className="fill-neutral-700" />
@@ -95,14 +102,14 @@ const Landing = (props) => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full pb-56"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full mb-56"
       >
         <div className="flex flex-col w-9/12"
           data-scroll
           data-scroll-speed=".6"
         >
           <h1 className="text-4xl font-bold mb-8">About Me</h1>
-          <div className="flex flex-col gap-4 text-lg sm:text-2xl">
+          <div className="flex flex-col gap-8 justify-center text-lg sm:text-2xl">
             <p>
               {`I'm a software developer working as`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
                 <a className="text-blue-600 font-bold" target="_blank">
@@ -111,7 +118,7 @@ const Landing = (props) => {
               </Link> and currently located in <b>Istanbul, Turkey.</b>
             </p>
             <p>
-              {`I'm a 19 year old Computer Programming student in Istanbul Arel University. I wished that i could be an Computer Engineering student but i was too lazy to study.`}
+              {`I'm a 19 year old Computer Programming student in Istanbul Arel University.`}
             </p>
             <p>
               {`I've always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance)
