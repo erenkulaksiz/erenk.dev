@@ -10,7 +10,7 @@ const Writer = ({ strings }) => {
         setSSR(false);
     }, []);
 
-    return (<span className="text-lg sm:text-3xl mt-4">
+    return (<span className="text-lg sm:text-2xl mt-4">
         {isSSR ? <div>
             <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>I love </span>
             <span> React since 2020</span>

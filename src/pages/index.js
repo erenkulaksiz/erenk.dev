@@ -35,7 +35,7 @@ const Landing = (props) => {
       data-scroll-container
     >
       <Head>
-        <title>erenk.dev</title>
+        <title>erenkulaksiz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main
@@ -44,11 +44,11 @@ const Landing = (props) => {
         data-scroll
         id="main"
       >
-        <div className="flex flex-col w-9/12">
+        <div className="flex flex-col px-10 w-full sm:px-0 sm:w-9/12">
           <h1 className="font-extrabold text-4xl sm:text-6xl">
             {constants.landing.title}
           </h1>
-          <h2 className="text-lg sm:text-3xl mt-4 mb-4 text-neutral-700">
+          <h2 className="text-lg sm:text-3xl mt-4 text-neutral-700">
             {constants.landing.desc}
             {constants.landing.descAttr && <Link href={constants.landing.descAttrLink} passHref>
               <a className="ml-1 text-blue-600 font-bold" target="_blank">
@@ -60,7 +60,7 @@ const Landing = (props) => {
             strings={constants.landing.writerStrings}
           />
         </div>
-        <div className="flex flex-row mt-6 sm:mt-12 w-9/12 gap-6 text-sm sm:text-xl flex-wrap">
+        <div className="flex flex-col sm:flex-row mt-6 sm:mt-12  px-10 w-full sm:px-0 sm:w-9/12 gap-8 sm:gap-6 text-sm sm:text-xl flex-wrap">
           {constants.landing.contactList.map((contact, index) =>
             <Contact
               contact={contact}
@@ -109,7 +109,7 @@ const Landing = (props) => {
           data-scroll-speed=".6"
         >
           <h1 className="text-4xl font-bold mb-8">About Me</h1>
-          <div className="flex flex-col gap-8 justify-center text-lg sm:text-2xl">
+          <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
             <p>
               {`I'm a software developer working as`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
                 <a className="text-blue-600 font-bold" target="_blank">
