@@ -9,30 +9,21 @@ import { constants } from '../constants';
 import Project from '../components/project';
 import { ArrowUpRightIcon } from '../icons';
 
+const isServer = typeof window === "undefined";
+
 const Landing = (props) => {
   const containerRef = useRef();
 
-  let scroll = null;
-
   useEffect(() => {
-    /*if (typeof window === "undefined") {
-      return;
-    }
-    */
+    if (isServer) return;
 
-    scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
+    let scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
       new LocomotiveScroll.default({
         el: containerRef.current,
         smooth: true
       });
     });
 
-    return () => {
-      if (typeof scroll.destroy == "function") {
-        scroll.destroy();
-        console.log("removed scroll container!");
-      }
-    }
   }, []);
 
   return (
