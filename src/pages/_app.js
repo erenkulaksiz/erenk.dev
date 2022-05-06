@@ -8,8 +8,7 @@ import { ThemeProvider } from "next-themes";
 const erenkdev = ({ Component, pageProps }) => {
   return (<ThemeProvider
     attribute="class"
-    defaultTheme="system"
-    enableSystem
+    defaultTheme="light"
   >
     <Head>
       <meta
