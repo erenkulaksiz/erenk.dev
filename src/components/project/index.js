@@ -2,18 +2,20 @@ import Link from "next/link";
 import { ChevronLeftIcon, LinkIcon } from "../../icons";
 
 const Project = ({ project, ...rest }) => {
-    return (<div {...rest} className="group hover:-translate-y-1 shadow-xl overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative" style={{ backgroundColor: project.theme.color }}>
+    return (<div {...rest} className="group hover:-translate-y-1 hover:-translate-x-1 shadow-xl overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative" style={{ backgroundColor: project.theme.color }}>
         {project.image && <div className="flex md:hidden items-center mb-4">
-            <img src={project.image} className="object-contain w-24" />
+            <img src={project.image} className="object-contain w-24 rounded" />
         </div>}
-        <h2 className="text-xl sm:text-3xl font-medium z-50 uppercase flex items-center flex-wrap gap-2" style={{ color: project.theme.text }}>
-            {project.title}
+        <div className="flex flex-row gap-2 mb-2 text-white">
             {project.tags && project.tags.map((tag, index) => (<span key={index} className="flex items-center justify-center text-xs backdrop-blur-sm bg-white/20 p-1 px-2 rounded-lg">
                 {tag}
             </span>))}
+        </div>
+        <h2 className="text-xl sm:text-3xl font-medium z-50 uppercase flex items-center flex-wrap" style={{ color: project.theme.text }}>
+            {project.title}
         </h2>
-        <h3 className="mt-4" style={{ color: project.theme.descColor }}>{project.desc}</h3>
-        {project.theme.bgGradient && <div className="-z-10 absolute rounded-xl left-0 right-0 bottom-0 top-0 bg-gradient-to-r from-transparent/0 to-neutral-900/80" />}
+        <h3 className="mt-1" style={{ color: project.theme.descColor }}>{project.desc}</h3>
+        {project.theme.bgGradient && <div className="-z-10 absolute rounded-xl left-0 right-0 bottom-0 top-0 bg-gradient-to-r from-transparent/0 to-neutral-900/80 group-hover:opacity-50 transition-opacity" />}
         {project.image && <div className="text-white absolute hidden md:flex top-0 bottom-0 items-center group-hover:-right-8 right-8 transition-all ease-in-out">
             <ChevronLeftIcon width={24} height={24} fill="currentColor" />
         </div>}

@@ -13,11 +13,14 @@ import { ArrowUpRightIcon, ChevronLeftIcon } from '../icons';
 const Landing = (props) => {
   const { theme, setTheme } = useTheme();
   const [SSR, setSSR] = useState(true);
+  const [random, setRandom] = useState(-1);
 
   const containerRef = useRef();
 
   useEffect(() => {
     setSSR(false);
+
+    if (random == -1) constants.landing.RANDOM_PHOTO_ON && setRandom(Math.floor(Math.random() * constants.landing.RANDOM_PHOTO_COUNT));
 
     let scroll = import("locomotive-scroll").then((LocomotiveScroll) => {
       new LocomotiveScroll.default({
@@ -47,18 +50,23 @@ const Landing = (props) => {
       <div
         className="flex flex-col relative items-center justify-center h-screen max-w-[1688px] w-full"
       >
+        {constants.landing.RANDOM_PHOTO_ON && <img src={`/images/random_${random}.jpeg`} className="absolute w-full h-full object-cover opacity-10 dark:opacity-10 -z-10" />}
         {!SSR && <div
           className="px-6 w-full sm:px-0 sm:w-9/12"
           data-scroll
           data-scroll-speed="5"
         >
           <img
-            src="/eren.jpg"
+            src="/images/eren.jpg"
             alt="eren"
             className="object-contain w-32 transition-all ease-in-out rounded-lg"
           />
         </div>}
-        <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12 mt-4">
+        <div
+          className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12 mt-4 z-20"
+          data-scroll
+          data-scroll-speed="2"
+        >
           <h1 className="font-extrabold text-4xl sm:text-6xl">
             {constants.landing.title}
           </h1>
@@ -74,7 +82,11 @@ const Landing = (props) => {
             strings={constants.landing.writerStrings}
           />
         </div>
-        <div className="flex flex-col sm:flex-row mt-12 px-6 w-full sm:px-0 sm:w-9/12 gap-8 sm:gap-6 text-md sm:text-xl font-bold flex-wrap">
+        <div
+          className="flex flex-col sm:flex-row mt-12 px-6 w-full sm:px-0 sm:w-9/12 gap-8 sm:gap-6 text-md sm:text-xl font-bold flex-wrap"
+          data-scroll
+          data-scroll-speed="2"
+        >
           {constants.landing.contactList.map((contact, index) =>
             <Contact
               contact={contact}
@@ -82,11 +94,13 @@ const Landing = (props) => {
             />
           )}
         </div>
-        <div className="absolute bottom-0 pb-4 sm:pb-32 justify-center">
+        <div
+          data-scroll
+          data-scroll-speed="3"
+          className="absolute bottom-8 md:bottom-16 lg:bottom-32"
+        >
           <div
-            className="cursor-pointer flex flex-col items-center animate-pulse"
-            data-scroll
-            data-scroll-speed="3"
+            className="cursor-pointer flex flex-col items-center animate-[bounce_1.5s_ease_infinite]"
           >
             <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
             <span className="text-sm">Scroll to view more</span>
@@ -124,7 +138,7 @@ const Landing = (props) => {
         </div>
       </div>
       <div
-        className="flex flex-col items-center max-w-[1688px] w-full relative pb-32 mt-12"
+        className="flex flex-col items-center max-w-[1688px] w-full relative sm:mt-0 mt-32 pb-32"
       >
         <div
           className="flex flex-col gap-4 px-6 w-full sm:px-0 sm:w-9/12"
@@ -132,9 +146,9 @@ const Landing = (props) => {
           data-scroll-speed="6"
         >
           <h1 className="text-2xl sm:text-4xl font-bold mb-0 sm:mb-8">
-            Freelance
+            Freelance Projects
           </h1>
-          {constants.landing.workedprojects.map((project, index) =>
+          {constants.landing.workedProjects.map((project, index) =>
             <Project
               project={project}
               key={index}
@@ -149,7 +163,7 @@ const Landing = (props) => {
           data-scroll
           data-scroll-speed="2"
         >
-          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">About Me</h1>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">🙌 About Me</h1>
           <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
             <p>
               {`I'm a software developer working as`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
@@ -168,6 +182,25 @@ const Landing = (props) => {
             </p>
             <p>
               {`I had a big range from: Developing small games with Unity and Unreal Engine to Robotics with RPi3 (Python) and Arduino. I even made robot for ODTU Robotic Days which never went into competition since Corona Virus came up.`}
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8"
+      >
+        <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12"
+          data-scroll
+          data-scroll-speed="1"
+        >
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">👋  Say Hello</h1>
+          <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
+            <p>
+              Want to know how to build a website like this? This website built using NextJS and Tailwind combined.
+            </p>
+            <p>
+              Send me a hi message from Twitter or send me an email to meet! I will answer any of your questions, 24/7 no fees.
             </p>
           </div>
         </div>
