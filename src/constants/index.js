@@ -5,7 +5,6 @@ import {
     BehanceIcon,
     InstagramIcon
 } from "../icons";
-// project desc on section desc #TODO
 
 const writerHighlight = (text) => `<span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>${text}</span>`;
 

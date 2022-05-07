@@ -8,3 +8,5 @@ export { default as ChevronLeftIcon } from "../../public/icons/chevron_left.svg"
 export { default as InstagramIcon } from "../../public/icons/instagram.svg";
 export { default as DarkIcon } from "../../public/icons/dark.svg";
 export { default as LightIcon } from "../../public/icons/light.svg";
+
+export { default as Abstract1 } from "../../public/icons/1.svg";

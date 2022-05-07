@@ -6,6 +6,7 @@ const Contact = ({ contact }) => {
             className="text-blue-600 flex flex-row items-center gap-2"
             target={contact?.email != true ? "_blank" : null}
             title={contact.id}
+            rel="noreferrer noopener"
         >
             {contact?.icon && contact.icon}
             <span>{contact.title}</span>

@@ -6,7 +6,15 @@ module.exports = {
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      keyframes: {
+        landingBounce: {
+          '0%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-16px)' },
+          '100%': { transform: 'translateY(0px)' },
+        }
+      }
+    },
   },
   plugins: [],
 };

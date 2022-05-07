@@ -24,19 +24,19 @@ const Project = ({ project, ...rest }) => {
         </div>}
         <div className="flex flex-row gap-2 items-center mt-4">
             {project.android && <Link href={project.androidURL} passHref>
-                <a target="_blank">
+                <a target="_blank" rel="noreferrer noopener">
                     <img src={project.android} className="h-10 hover:opacity-75 transition-all ease-in-out object-contain" />
                 </a>
             </Link>}
             {project.link && <Link href={project.linkURL} passHref>
-                <a className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" target="_blank">
+                <a target="_blank" rel="noreferrer noopener" className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" >
                     <LinkIcon width={12} height={12} fill="currentColor" />
                     <span>{project.link}</span>
                 </a>
             </Link>}
             {project?.contacts?.map((projectContact, index) => (
                 <Link href={projectContact.url} passHref key={index}>
-                    <a className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" target="_blank">
+                    <a target="_blank" rel="noreferrer noopener" className="flex flex-row items-center gap-2 text-white backdrop-blur-md bg-white/20 hover:bg-white/10 transition-all ease-in-out p-1 px-3 rounded-lg" >
                         {projectContact.icon && <span>{projectContact.icon}</span>}
                         <span>{projectContact.title}</span>
                     </a>
