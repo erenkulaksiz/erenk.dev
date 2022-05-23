@@ -61,19 +61,19 @@ const Landing = (props) => {
         className="flex flex-col relative items-center justify-center h-screen max-w-[1688px] w-full"
       >
         <SVG
-          className="absolute w-24 fill-transparent stroke-blue-600/70 stroke-2 right-12 top-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-transparent stroke-blue-600/70 stroke-2 right-12 top-24 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="hexa"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute w-24 fill-pink-600/20 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-pink-600/20 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute sm:flex hidden w-32 fill-yellow-600/20 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 sm:flex hidden w-32 fill-yellow-600/20 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
           data-scroll-speed="-6"
@@ -139,7 +139,7 @@ const Landing = (props) => {
           className="absolute bottom-8 md:bottom-16 lg:bottom-32"
         >
           <div
-            className="cursor-pointer flex flex-col items-center animate-[landingBounce_2s_ease-in-out_infinite]"
+            className="cursor-pointer flex flex-col items-center animate-[landingBounce_5s_ease-in-out_infinite]"
           >
             <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
             <span className="text-sm">Scroll to view more</span>
@@ -189,7 +189,7 @@ const Landing = (props) => {
             </a>
           </Link>
         </div>
-      </div>
+      </div>{/*
       <div
         className="flex flex-col items-center max-w-[1688px] w-full relative mt-36 sm:mt-12 pb-32"
       >
@@ -208,16 +208,29 @@ const Landing = (props) => {
             />
           )}
         </div>
-      </div>
+          </div>*/}
       <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
       >
+        <SVG
+          className="absolute -z-10 w-24 fill-pink-600/20 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          icon="circle"
+          data-scroll
+          data-scroll-speed="2"
+        />
+
+        <SVG
+          className="absolute -z-10 w-24 fill-blue-600/20 right-12 bottom-100 animate-[landingBounce_4s_ease-in-out_infinite]"
+          icon="triangle"
+          data-scroll
+          data-scroll-speed="2"
+        />
         <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12"
           data-scroll
           data-scroll-speed="2"
         >
           <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">🙌 About Me</h1>
-          <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
+          <div className="flex flex-col font-extralight gap-8 justify-center text-lg md:text-2xl">
             <p>
               {`I'm a software developer working as`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
                 <a className="text-blue-600 font-bold" target="_blank">
@@ -226,22 +239,18 @@ const Landing = (props) => {
               </Link> and currently located in <b>Istanbul, Turkey.</b>
             </p>
             <p>
-              {`I'm a 19 year old Computer Programming student in Istanbul Arel University.`}
+              Ive always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance)
+              And i was interested into programming, which i was building <b>Windows Forms via VisualBasic .net.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago.
             </p>
             <p>
-              {`I've always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance)
-              And i was interested into programming, which i was building Windows Forms via VisualBasic .Net.
-              After sometime later, i started migrating together and i discovered JavaScript nearly 2 years ago.`}
-            </p>
-            <p>
-              {`I had a big range from: Developing small games with Unity and Unreal Engine to Robotics with RPi3 (Python) and Arduino. I even made robot for ODTU Robotic Days which never went into competition since Corona Virus came up.`}
+              {`I had a big range from developing small games with Unity and Unreal Engine to Robotics with RPi3 (Python) & Arduino. I even made robot for ODTU Robotic Days which never went into competition since Corona Virus came up.`}
             </p>
           </div>
         </div>
       </div>
 
       <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
       >
         <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12"
           data-scroll
@@ -255,7 +264,7 @@ const Landing = (props) => {
           </div>
         </div>
       </div>
-    </main>
+    </main >
   )
 }
 

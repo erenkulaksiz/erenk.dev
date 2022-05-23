@@ -56,6 +56,11 @@ export const constants = {
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
                 email: true,
             },
+            {
+                title: "Zetup",
+                id: "zetup",
+                link: "https://zetup.me/eren?setup=622df24e66baea3648de355c",
+            }
         ],
         projects: [
             {
@@ -67,7 +72,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Android", "React Native", "Open Source"],
+                tags: ["Android", "Open Source", "React Native"],
                 image: "https://raw.githubusercontent.com/erenkulaksiz/Topla/master/design/logo/dark/logo_full_dark.png",
                 android: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png",
                 androidURL: "https://play.google.com/store/apps/details?id=com.erencode.topla",
@@ -87,7 +92,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Web", "NextJS", "Building", "Open Source"],
+                tags: ["Web", "Building", "Open Source", "NextJS"],
                 link: "notal.app",
                 linkURL: "https://notal.app",
                 image: "https://raw.githubusercontent.com/erenkulaksiz/Notal/master/design/notal_logo_clean_white.png",
@@ -97,9 +102,33 @@ export const constants = {
                     url: "https://github.com/erenkulaksiz/Notal",
                     icon: <GitHubIcon width={20} height={20} fill="currentColor" />
                 }],
+            },
+            {
+                title: "Locati",
+                desc: "Coming soon.",
+                tags: ["Web", "NextJS"],
+                theme: {
+                    color: "#19181E",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
             }
         ],
         workedProjects: [
+            /*
+            {
+                workingOn: true,
+                desc: "One of Turkey's best dropshipping software as a service's frontend is being built by me.",
+                theme: {
+                    color: "gray",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
+                image: "/images/pgrim_white.png",
+                tags: ["Work in Progress", "Web", "React"]
+            },
             {
                 title: "WA Agent",
                 desc: "Track your family's wp online and offline activities.",
@@ -109,7 +138,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Android", "iOS", "UI/UX", "Application"],
+                tags: ["Android", "iOS", "UI/UX", "Application", "React Native"],
                 link: "Behance",
                 linkURL: "https://www.behance.net/gallery/132069999/WA-Agent-UIUX",
                 image: "/images/wa_agent.png"
@@ -123,7 +152,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Android", "iOS", "UI/UX", "Banking", "Application"],
+                tags: ["Android", "iOS", "UI/UX", "Banking", "Application", "React Native"],
                 link: "neepay.co",
                 linkURL: "https://neepay.co/",
                 image: "https://gcdn.bionluk.com/uploads/order/75dfa497-2d0b-464a-98ed-c74b8c7092d4.png",
@@ -133,6 +162,7 @@ export const constants = {
                     url: "https://drive.google.com/drive/folders/1X5E5iZJI5yePX8Z5h1pWuXzDfwSl2Rgf"
                 }]
             },
+            */
         ]
     }
 }
