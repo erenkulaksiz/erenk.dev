@@ -23,19 +23,13 @@ export const constants = {
             `${writerHighlight("I know how")} a good user experience works`,
         ],
         RANDOM_PHOTO_COUNT: 5,
-        RANDOM_PHOTO_ON: false,
+        RANDOM_PHOTO_ON: true,
         contactList: [
             {
                 title: "Twitter",
                 id: "twitter",
                 link: "https://twitter.com/erencode",
                 icon: <TwitterIcon width={20} height={20} fill="currentColor" />
-            },
-            {
-                title: "Instagram",
-                id: "instagram",
-                link: "https://instagram.com/erentr",
-                icon: <InstagramIcon width={20} height={20} fill="currentColor" />
             },
             {
                 title: "GitHub",
@@ -55,11 +49,6 @@ export const constants = {
                 link: "mailto:erenkulaksz@gmail.com",
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
                 email: true,
-            },
-            {
-                title: "Zetup",
-                id: "zetup",
-                link: "https://zetup.me/eren?setup=622df24e66baea3648de355c",
             }
         ],
         projects: [

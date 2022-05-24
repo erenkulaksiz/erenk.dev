@@ -41,7 +41,7 @@ const Landing = (props) => {
     <main
       ref={containerRef}
       className="flex flex-col items-center dark:text-white text-black relative overflow-hidden"
-      data-scroll-container
+    //data-scroll-container
     >
       <Head>
         <title>erenkulaksiz</title>
@@ -58,29 +58,41 @@ const Landing = (props) => {
         data-scroll-speed="4"
       />*/}
       <div
-        className="flex flex-col relative items-center justify-center h-screen max-w-[1688px] w-full"
+        className="flex flex-col relative items-center justify-center h-screen max-h-screen w-full"
       >
+        {constants.landing.RANDOM_PHOTO_ON && <div className="absolute left-0 right-0 -bottom-20 bg-gradient-to-t dark:from-black from-white dark:to-transparent/90 to-white/70 top-0">
+          <img
+            src={`/images/random_${random}.jpeg`}
+            className="absolute w-full h-[calc(100%-10px)] -z-20 object-cover"
+          />
+        </div>}
         <SVG
-          className="absolute -z-10 w-24 fill-transparent stroke-blue-600/70 stroke-2 right-12 top-24 animate-[landingBounce_4s_ease-in-out_infinite]"
-          icon="hexa"
+          className="absolute z-10 sm:flex hidden w-24 fill-blue-600/70 left-12 scale-50 top-24 animate-[landingBounce_2.5s_ease-in-out_infinite]"
+          icon="cross"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute -z-10 w-24 fill-pink-600/20 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute z-10 w-24 fill-transparent stroke-blue-600/70 stroke-2 right-12 top-24 animate-[landingBounce_3.5s_ease-in-out_infinite]"
+          icon="hexa"
+          data-scroll
+          data-scroll-speed="2"
+          data-scroll-id="hexa"
+        />
+        <SVG
+          className="absolute z-10 w-24 fill-pink-600/20 left-12 bottom-16 animate-[landingBounce_2.2s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute -z-10 sm:flex hidden w-32 fill-yellow-600/20 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute z-10 sm:flex hidden w-32 fill-yellow-600/20 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4.2s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
           data-scroll-speed="-6"
         />
-        {constants.landing.RANDOM_PHOTO_ON && <img src={`/images/random_${random}.jpeg`} className="absolute w-full h-full object-cover opacity-10 dark:opacity-10 -z-10" />}
         {!SSR && <div
-          className="px-6 w-full sm:px-0 sm:w-9/12"
+          className="px-6 w-full sm:px-0 sm:w-9/12 z-10"
           data-scroll
           data-scroll-speed="5"
         >
@@ -122,7 +134,7 @@ const Landing = (props) => {
           />
         </div>
         <div
-          className="flex flex-col sm:flex-row mt-12 px-6 w-full sm:px-0 sm:w-9/12 gap-8 sm:gap-6 text-md sm:text-xl font-bold flex-wrap"
+          className="flex flex-col z-10 sm:flex-row mt-12 px-6 w-full sm:px-0 sm:w-9/12 gap-8 sm:gap-6 text-md sm:text-xl font-bold flex-wrap"
           data-scroll
           data-scroll-speed="2"
         >
@@ -136,7 +148,7 @@ const Landing = (props) => {
         <div
           data-scroll
           data-scroll-speed="4"
-          className="absolute bottom-8 md:bottom-16 lg:bottom-32"
+          className="absolute bottom-4 md:bottom-18 lg:bottom-36"
         >
           <div
             className="cursor-pointer flex flex-col items-center animate-[landingBounce_5s_ease-in-out_infinite]"
@@ -154,7 +166,7 @@ const Landing = (props) => {
           data-scroll
           data-scroll-speed="1"
         >
-          <div className="rotate-[12deg] w-full h-full bg-gradient-to-r from-blue-300/50 dark:from-blue-600 to-pink-300/50 dark:to-pink-600" />
+          <div className="rotate-[12deg] w-full h-full bg-gradient-to-r from-blue-600 dark:from-blue-600 to-pink-600 dark:to-pink-600" />
         </div>
 
         <SVG
@@ -252,14 +264,18 @@ const Landing = (props) => {
       <div
         className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
       >
-        <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12"
+        <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12"
           data-scroll
           data-scroll-speed="1"
         >
           <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">👋  Say Hello</h1>
           <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
             <p>
-              Send me a hi message from Twitter or send me an email to meet! I will answer any of your questions, 24/7 no fees.
+              Send me a hi message from <Link href="https://twitter.com/erencode" passHref>
+                <a className="text-blue-600 font-bold" target="_blank">
+                  Twitter
+                </a>
+              </Link> or send me an email to meet! I will answer any of your questions, 24/7 no fees.
             </p>
           </div>
         </div>
