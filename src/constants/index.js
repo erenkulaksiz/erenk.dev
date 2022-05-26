@@ -23,7 +23,7 @@ export const constants = {
             `${writerHighlight("I know how")} a good user experience works`,
         ],
         RANDOM_PHOTO_COUNT: 5,
-        RANDOM_PHOTO_ON: true,
+        RANDOM_PHOTO_ON: false,
         contactList: [
             {
                 title: "Twitter",
