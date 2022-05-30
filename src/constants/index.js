@@ -37,12 +37,14 @@ export const constants = {
                 link: "https://github.com/erenkulaksiz",
                 icon: <GitHubIcon width={20} height={20} fill="currentColor" />
             },
+            /*
             {
                 title: "Behance",
                 id: "behance",
                 link: "https://www.behance.net/erenkulaksiz",
                 icon: <BehanceIcon width={20} height={20} fill="currentColor" />
             },
+            */
             {
                 title: "E-Mail",
                 id: "email",
