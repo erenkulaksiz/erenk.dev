@@ -162,11 +162,11 @@ const Landing = (props) => {
         className="flex flex-col items-center max-w-[1688px] w-full overflow-x-visible relative pb-2 mt-12"
       >
         <div
-          className="absolute -left-[100%] -right-[100%] bottom-16 top-64"
+          className="absolute -left-[100%] -right-[100%] bottom-16 top-64 -z-30"
           data-scroll
           data-scroll-speed="1"
         >
-          <div className="rotate-[12deg] w-full h-full bg-gradient-to-r from-blue-600 dark:from-blue-600 to-pink-600 dark:to-pink-600" />
+          <div className="rotate-[4deg] w-full h-full bg-gradient-to-r from-blue-600 dark:from-blue-600 to-pink-600 dark:to-pink-600" />
         </div>
 
         <SVG
