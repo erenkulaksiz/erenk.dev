@@ -3,18 +3,17 @@ import { readFileSync } from 'fs';
 import { join } from 'path';
 
 const SEO = <>
-    <meta property="x-author" name="x-author" content="Developed with <3 By Eren Kulaksiz" />
     <meta property="apple-mobile-web-app-capable" name="apple-mobile-web-app-capable" content='yes' />
     <meta property='apple-mobile-web-app-status-bar-style' name="apple-mobile-web-app-status-bar-style" content='default' />
     <meta property='format-detection' name="format-detection" content='telephone=no' />
     <meta property='mobile-web-app-capable' name="mobile-web-app-capable" content='yes' />
     <link rel='shortcut icon' href='/favicon.ico' />
     <meta property='twitter:card' name="twitter:card" content='summary' />
-    <meta property='twitter:url' name="twitter:url" content='https://locati.dev' />
+    <meta property='twitter:url' name="twitter:url" content='https://erenk.dev' />
     <meta property='twitter:creator' name="twitter:creator" content='@erencode' />
     <meta property="twitter:site" name="twitter:site" content="@erencode" />
     <meta property='og:type' name="og:type" content='website' />
-    <meta property='og:site_name' name="og:site_name" content='locati.dev' />
+    <meta property='og:site_name' name="og:site_name" content='erenk.dev' />
 </>;
 
 const InlineStyle = ({ assetPrefix, file, nonce }) => {
