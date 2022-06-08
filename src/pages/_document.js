@@ -38,12 +38,12 @@ class CriticalCssHead extends Head {
 const erenkdev = () => {
     return (
         <Html lang='en'>
-            <CriticalCssHead>
-
+            <Head>
                 <head dangerouslySetInnerHTML={{
                     __html: `
 <!-- https://i.pinimg.com/originals/60/c1/4a/60c14a43fb4745795b3b358868517e79.png -->
-` }}>
+`
+                }}>
                 </head>
                 <meta charSet="UTF-8" />
                 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -59,7 +59,7 @@ const erenkdev = () => {
                         __html: `window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'G-V0RX3S6JG7', {page_path: window.location.pathname,});`,
                     }}
                 />
-            </CriticalCssHead>
+            </Head>
             <body>
                 <noscript className="p-2 absolute bg-white" style={{ zIndex: 999 }}>If you are seeing this message, that means <strong>JavaScript has been disabled on your browser</strong>, please <strong>enable JavaScript</strong> to make this app work.</noscript>
                 <Main />
