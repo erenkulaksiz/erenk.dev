@@ -67,20 +67,20 @@ const Landing = (props) => {
           />
         </div>}
         <SVG
-          className="absolute z-10 sm:flex hidden w-24 fill-blue-600/70 left-12 scale-50 top-24 animate-[landingBounce_2.5s_ease-in-out_infinite]"
+          className="absolute z-10 sm:flex hidden w-24 fill-blue-600/10 left-12 scale-50 top-24 animate-[landingBounce_2.5s_ease-in-out_infinite]"
           icon="cross"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute z-10 w-24 fill-transparent stroke-blue-600/70 stroke-2 right-12 top-24 animate-[landingBounce_3.5s_ease-in-out_infinite]"
+          className="absolute z-10 w-24 fill-transparent stroke-blue-600/20 stroke-2 right-12 top-24 animate-[landingBounce_3.5s_ease-in-out_infinite]"
           icon="hexa"
           data-scroll
           data-scroll-speed="2"
           data-scroll-id="hexa"
         />
         <SVG
-          className="absolute z-10 w-24 fill-pink-600/20 left-12 bottom-16 animate-[landingBounce_2.2s_ease-in-out_infinite]"
+          className="absolute z-10 w-24 fill-pink-600/10 left-12 bottom-16 animate-[landingBounce_2.2s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
           data-scroll-speed="2"
@@ -146,15 +146,25 @@ const Landing = (props) => {
           )}
         </div>
         <div
+          className="absolute left-0 right-0 top-0 bottom-4 sm:flex hidden justify-center items-end"
           data-scroll
           data-scroll-speed="4"
-          className="absolute bottom-4 md:bottom-18 lg:bottom-36"
         >
-          <div
-            className="cursor-pointer flex flex-col items-center animate-[landingBounce_5s_ease-in-out_infinite]"
-          >
-            <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
-            <span className="text-sm">Scroll to view more</span>
+          <div>
+            <div className="cursor-pointer flex flex-col items-center animate-[landingBounce_5s_ease-in-out_infinite]">
+              <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
+              <span className="text-sm">Scroll to view more</span>
+            </div>
+          </div>
+        </div>
+        <div
+          className="absolute left-0 right-0 top-0 bottom-4 sm:hidden flex justify-center items-end"
+        >
+          <div>
+            <div className="cursor-pointer flex flex-col items-center animate-[landingBounce_5s_ease-in-out_infinite]">
+              <ChevronLeftIcon width={20} height={20} fill="currentColor" className="rotate-90" />
+              <span className="text-sm">Scroll to view more</span>
+            </div>
           </div>
         </div>
       </div>
@@ -162,7 +172,7 @@ const Landing = (props) => {
         className="flex flex-col items-center max-w-[1688px] w-full overflow-x-visible relative pb-2 mt-12"
       >
         <div
-          className="absolute -left-[100%] -right-[100%] bottom-16 top-64 -z-30"
+          className="absolute -left-[100%] -right-[100%] bottom-64 top-64 -z-30"
           data-scroll
           data-scroll-speed="1"
         >
@@ -174,6 +184,13 @@ const Landing = (props) => {
           icon="hexa"
           data-scroll
           data-scroll-speed="2"
+        />
+
+        <SVG
+          className="absolute w-24 fill-transparent stroke-white/70 stroke-4 right-24 top-[40%] bottom-[50%] animate-[landingBounce_4s_ease-in-out_infinite]"
+          icon="triangle"
+          data-scroll
+          data-scroll-speed="4"
         />
         <div
           className="flex flex-col gap-4 px-6 w-full sm:px-0 mt-16 md:mt-0 sm:w-9/12"
@@ -225,14 +242,14 @@ const Landing = (props) => {
         className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
       >
         <SVG
-          className="absolute -z-10 w-24 fill-pink-600/20 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-pink-600/10 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
           data-scroll-speed="2"
         />
 
         <SVG
-          className="absolute -z-10 w-24 fill-blue-600/20 right-12 bottom-100 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-blue-600/10 right-12 bottom-100 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
           data-scroll-speed="2"
