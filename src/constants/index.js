@@ -48,7 +48,7 @@ export const constants = {
             {
                 title: "E-Mail",
                 id: "email",
-                link: "mailto:erenkulaksz@gmail.com",
+                link: "mailto:me@erenk.dev",
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
                 email: true,
             }
@@ -63,7 +63,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Android", "Open Source", "React Native"],
+                tags: ["Android", "Open Source", "React Native", "NodeJS", "MongoDB"],
                 image: "https://raw.githubusercontent.com/erenkulaksiz/Topla/master/design/logo/dark/logo_full_dark.png",
                 android: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png",
                 androidURL: "https://play.google.com/store/apps/details?id=com.erencode.topla",
@@ -83,7 +83,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Web", "Building", "Open Source", "NextJS"],
+                tags: ["Web", "TypeScript", "Open Source", "NextJS", "MongoDB"],
                 link: "notal.app",
                 linkURL: "https://notal.app",
                 image: "https://raw.githubusercontent.com/erenkulaksiz/Notal/master/design/notal_logo_clean_white.png",
@@ -93,17 +93,6 @@ export const constants = {
                     url: "https://github.com/erenkulaksiz/Notal",
                     icon: <GitHubIcon width={20} height={20} fill="currentColor" />
                 }],
-            },
-            {
-                title: "Locati",
-                desc: "Coming soon.",
-                tags: ["Web", "NextJS"],
-                theme: {
-                    color: "#19181E",
-                    descColor: "#e6e6e6",
-                    text: "white",
-                    bgGradient: true,
-                },
             }
         ],
         workedProjects: [

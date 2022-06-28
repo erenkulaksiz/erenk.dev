@@ -22,7 +22,7 @@ const Project = ({ project, ...rest }) => {
             <ChevronLeftIcon width={24} height={24} fill="currentColor" />
         </div>}
         {project.image && <div className="hidden md:flex -z-10 absolute top-0 bottom-0 group-hover:right-8 -right-[64px] opacity-20 group-hover:opacity-100 transition-all ease-[cubic-bezier(0.175,0.885,0.32,1.275)] duration-[.8s] items-center">
-            <img src={project.image} className="object-contain w-48 rounded-lg" />
+            <img src={project.image} className="object-contain w-48" />
         </div>}
         <div className="flex flex-row gap-2 items-center mt-4">
             {project.android && <Link href={project.androidURL} passHref>

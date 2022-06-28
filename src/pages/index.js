@@ -261,15 +261,14 @@ const Landing = (props) => {
           <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">🙌 About Me</h1>
           <div className="flex flex-col font-extralight gap-8 justify-center text-lg md:text-2xl">
             <p>
-              {`I'm a software developer working as`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
+              {`I'm a software developer working as a`} <b>Frontend Developer</b> <Link href="https://teknasyon.com" passHref>
                 <a className="text-blue-600 font-bold" target="_blank">
                   @teknasyon
                 </a>
               </Link> and currently located in <b>Istanbul, Turkey.</b>
             </p>
             <p>
-              Ive always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance)
-              And i was interested into programming, which i was building <b>Windows Forms via VisualBasic .net.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago.
+              {`I've always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance) And i was interested into programming, which i was building`} <b>Windows Forms via VisualBasic and C#.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago.
             </p>
             <p>
               {`I had a big range from developing small games with Unity and Unreal Engine to Robotics with RPi3 (Python) & Arduino. I even made robot for ODTU Robotic Days which never went into competition since Corona Virus came up.`}
