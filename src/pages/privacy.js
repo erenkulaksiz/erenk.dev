@@ -30,7 +30,7 @@ const Privacy = (props) => {
             <p><span>-User data is private and not transferred to third parties.</span></p>
             <h1 className="text-2xl"><span>Legality of data collection</span></h1>
             <p><span>-The user of the application confirms that any data related to the phone number used in the Application belongs to the user legally. The user guarantees that the data processing does not violate the rights of third parties and any use of the Application is carried out with the consent of the user and on his direct instructions.</span></p>
-            <h1 className="text-2xl"><span>-The amount of data processed.</span></h1>
+            <h1><span>-The amount of data processed.</span></h1>
             <p><span>The user has read the functionality of the application and agrees to the processing of data to the extent to which they are used in the Application</span></p>
             <h3><span>Success Rate</span></h3>
             <p><span>The application has 99% success rate. This is the highest rate among all similar apps.</span></p>

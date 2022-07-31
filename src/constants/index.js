@@ -55,26 +55,6 @@ export const constants = {
         ],
         projects: [
             {
-                title: "Topla",
-                desc: "Topla is an Android app, main target is for practicing basic algebra speed.",
-                theme: {
-                    color: "#0F7CBB",
-                    descColor: "#e6e6e6",
-                    text: "white",
-                    bgGradient: true,
-                },
-                tags: ["Android", "Open Source", "React Native", "NodeJS", "MongoDB"],
-                image: "https://raw.githubusercontent.com/erenkulaksiz/Topla/master/design/logo/dark/logo_full_dark.png",
-                android: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Google_Play_Store_badge_EN.svg/2560px-Google_Play_Store_badge_EN.svg.png",
-                androidURL: "https://play.google.com/store/apps/details?id=com.erencode.topla",
-                contacts: [{
-                    title: "GitHub",
-                    id: "github",
-                    url: "https://github.com/erenkulaksiz/Topla",
-                    icon: <GitHubIcon width={20} height={20} fill="currentColor" />
-                }]
-            },
-            {
                 title: "Notal",
                 desc: "Take notes, write todos and create your own workspaces.",
                 theme: {
@@ -93,6 +73,24 @@ export const constants = {
                     url: "https://github.com/erenkulaksiz/Notal",
                     icon: <GitHubIcon width={20} height={20} fill="currentColor" />
                 }],
+            },
+            {
+                title: "Topla",
+                desc: "Topla is an Android app, main target is for practicing basic algebra speed.",
+                theme: {
+                    color: "#0F7CBB",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
+                tags: ["Android", "Open Source", "React Native", "NodeJS", "MongoDB"],
+                image: "https://raw.githubusercontent.com/erenkulaksiz/Topla/master/design/logo/dark/logo_full_dark.png",
+                contacts: [{
+                    title: "GitHub",
+                    id: "github",
+                    url: "https://github.com/erenkulaksiz/Topla",
+                    icon: <GitHubIcon width={20} height={20} fill="currentColor" />
+                }]
             }
         ],
         workedProjects: [
