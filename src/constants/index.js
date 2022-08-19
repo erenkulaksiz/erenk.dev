@@ -66,7 +66,7 @@ export const constants = {
                 tags: ["Web", "TypeScript", "Open Source", "NextJS", "MongoDB"],
                 link: "notal.app",
                 linkURL: "https://notal.app",
-                image: "https://raw.githubusercontent.com/erenkulaksiz/Notal/master/design/notal_logo_clean_white.png",
+                image: "https://raw.githubusercontent.com/erenkulaksiz/Notal/master/brand/notal_logo_clean_white.png",
                 contacts: [{
                     title: "GitHub",
                     id: "github",
