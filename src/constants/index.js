@@ -12,8 +12,8 @@ export const constants = {
     landing: {
         title: "Hello, I'm Eren.",
         desc: "I'm a Frontend Developer",
-        descAttr: "@teknasyon",
-        descAttrLink: "https://teknasyon.com",
+        descAttr: "",
+        descAttrLink: "",
         githubURL: "https://github.com/erenkulaksiz",
         writerStrings: [
             `${writerHighlight("I am making projects")} since 2018`,
