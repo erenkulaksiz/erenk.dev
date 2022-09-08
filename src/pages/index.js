@@ -67,26 +67,26 @@ const Landing = (props) => {
           />
         </div>}
         <SVG
-          className="absolute z-10 sm:flex hidden w-24 fill-blue-600/10 left-12 scale-50 top-24 animate-[landingBounce_2.5s_ease-in-out_infinite]"
+          className="absolute z-10 sm:flex hidden w-24 fill-blue-600/40 left-40 scale-50 top-40 animate-[landingBounce_2.5s_ease-in-out_infinite]"
           icon="cross"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute z-10 w-24 fill-transparent stroke-blue-600/20 stroke-2 right-12 top-24 animate-[landingBounce_3.5s_ease-in-out_infinite]"
+          className="absolute z-10 w-24 fill-transparent stroke-blue-600/40 stroke-2 right-12 top-24 animate-[landingBounce_3.5s_ease-in-out_infinite]"
           icon="hexa"
           data-scroll
           data-scroll-speed="2"
           data-scroll-id="hexa"
         />
         <SVG
-          className="absolute z-10 w-24 fill-pink-600/10 left-12 bottom-16 animate-[landingBounce_2.2s_ease-in-out_infinite]"
+          className="absolute z-10 w-24 fill-pink-600/40 left-12 bottom-16 animate-[landingBounce_2.2s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
           data-scroll-speed="2"
         />
         <SVG
-          className="absolute z-10 sm:flex hidden w-32 fill-yellow-600/20 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4.2s_ease-in-out_infinite]"
+          className="absolute z-10 sm:flex hidden w-32 fill-yellow-600/40 left-[70%] right-[50%] bottom-6 animate-[landingBounce_4.2s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
           data-scroll-speed="-6"
@@ -178,19 +178,17 @@ const Landing = (props) => {
         >
           <div className="rotate-[4deg] w-full h-full bg-gradient-to-r from-blue-600 dark:from-blue-600 to-pink-600 dark:to-pink-600" />
         </div>
-
         <SVG
           className="absolute w-24 fill-transparent stroke-white/70 stroke-2 left-24 top-[50%] bottom-[50%] animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="hexa"
           data-scroll
           data-scroll-speed="2"
         />
-
         <SVG
           className="absolute w-24 fill-transparent stroke-white/70 stroke-4 right-24 top-[40%] bottom-[50%] animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
-          data-scroll-speed="4"
+          data-scroll-speed="10"
         />
         <div
           className="flex flex-col gap-4 px-6 w-full sm:px-0 mt-16 md:mt-0 sm:w-9/12"
@@ -218,81 +216,44 @@ const Landing = (props) => {
             </a>
           </Link>
         </div>
-      </div>{/*
+      </div>
       <div
-        className="flex flex-col items-center max-w-[1688px] w-full relative mt-36 sm:mt-12 pb-32"
-      >
-        <div
-          className="flex flex-col gap-4 px-6 w-full sm:px-0 sm:w-9/12"
-          data-scroll
-          data-scroll-speed="6"
-        >
-          <h1 className="text-2xl sm:text-4xl font-bold mb-0 sm:mb-8">
-            Freelance Projects
-          </h1>
-          {constants.landing.workedProjects.map((project, index) =>
-            <Project
-              project={project}
-              key={index}
-            />
-          )}
-        </div>
-          </div>*/}
-      <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-0 mb-24"
       >
         <SVG
-          className="absolute -z-10 w-24 fill-pink-600/10 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-pink-600/40 left-12 bottom-24 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="circle"
           data-scroll
-          data-scroll-speed="2"
+          data-scroll-speed="4"
         />
 
         <SVG
-          className="absolute -z-10 w-24 fill-blue-600/10 right-12 bottom-100 animate-[landingBounce_4s_ease-in-out_infinite]"
+          className="absolute -z-10 w-24 fill-blue-600/40 right-12 bottom-64 animate-[landingBounce_4s_ease-in-out_infinite]"
           icon="triangle"
           data-scroll
           data-scroll-speed="2"
         />
-        <div className="flex flex-col px-6 w-full sm:px-0 sm:w-9/12"
-          data-scroll
-          data-scroll-speed="2"
-        >
-          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">🙌 About Me</h1>
-          <div className="flex flex-col font-extralight gap-8 justify-center text-lg md:text-2xl">
-            <p>
-              {`I'm a software developer working as a`} <b>Frontend Developer</b> and currently located in <b>Istanbul, Turkey.</b>
-            </p>
-            <p>
-              {`I've always loved visual stuff. I started off with doing motion graphics for various customers (you can checkout from my Behance) And i was interested into programming, which i was building`} <b>Windows Forms via VisualBasic and C#.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago.
-            </p>
-            <p>
-              {`I had a big range from developing small games with Unity and Unreal Engine to Robotics with RPi3 (Python) & Arduino. I even made robot for ODTU Robotic Days which never went into competition since Corona Virus came up.`}
-            </p>
-          </div>
-        </div>
       </div>
 
-      <div
-        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-32"
+      <SVG
+        className="absolute w-24 fill-transparent stroke-white/70 stroke-2 right-24 bottom-[24%] animate-[landingBounce_4s_ease-in-out_infinite]"
+        icon="hexa"
+        data-scroll
+        data-scroll-speed="8"
+      />
+      {constants.landing.sections.map(section => <div
+        className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-24"
       >
         <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12"
           data-scroll
           data-scroll-speed="1"
         >
-          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">👋  Say Hello</h1>
-          <div className="flex flex-col gap-8 justify-center text-lg md:text-2xl">
-            <p>
-              Send me a hi message from <Link href="https://twitter.com/erencode" passHref>
-                <a className="text-blue-600 font-bold" target="_blank">
-                  Twitter
-                </a>
-              </Link> or send me an email to meet! I will answer any of your questions, 24/7 no fees.
-            </p>
-          </div>
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">{section.sectionTitle}</h1>
+          <span className="text-lg md:text-2xl" dangerouslySetInnerHTML={{ __html: section.sectionContent }} />
         </div>
-      </div>
-    </main >
+      </div>)}
+      <span className="mt-16 mb-8">erenk.dev website is <a href="https://github.com/erenkulaksiz/erenk.dev" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
+    </main>
   )
 }
 

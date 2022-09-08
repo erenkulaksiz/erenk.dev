@@ -12,6 +12,13 @@ export const constants = {
     landing: {
         title: "Hello, I'm Eren.",
         desc: "I'm a Frontend Developer",
+        sections: [{
+            sectionTitle: "🙌 About Me",
+            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago and <b>TypeScript</b> nearly 6 months ago."
+        }, {
+            sectionTitle: "👋 Say Hello",
+            sectionContent: "Send me a hi message from <a href='https://twitter.com/erenkulaksiz' class='text-blue-600 font-bold' target='_blank'>Twitter</a> or send me an email to meet! I will answer any of your questions, 24/7 no fees."
+        }],
         descAttr: "",
         descAttrLink: "",
         githubURL: "https://github.com/erenkulaksiz",
@@ -48,7 +55,7 @@ export const constants = {
             {
                 title: "E-Mail",
                 id: "email",
-                link: "mailto:me@erenk.dev",
+                link: "mailto:erenkulaksz@gmail.com",
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
                 email: true,
             }
