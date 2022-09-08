@@ -242,6 +242,7 @@ const Landing = (props) => {
         data-scroll-speed="8"
       />
       {constants.landing.sections.map(section => <div
+        key={"section" + section.id}
         className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-24"
       >
         <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12"
@@ -252,7 +253,7 @@ const Landing = (props) => {
           <span className="text-lg md:text-2xl" dangerouslySetInnerHTML={{ __html: section.sectionContent }} />
         </div>
       </div>)}
-      <span className="mt-16 mb-8">erenk.dev website is <a href="https://github.com/erenkulaksiz/erenk.dev" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
+      <span className="mt-16 mb-8">erenk.dev website is <a href="https://github.com/erenkulaksiz/erenk.dev" rel="noreferrer" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
     </main>
   )
 }
