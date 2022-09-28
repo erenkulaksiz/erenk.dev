@@ -4,7 +4,7 @@ const Contact = ({ contact }) => {
     return (<Link href={contact.link}>
         <a
             className="text-blue-600 flex flex-row items-center gap-2 sm:hover:-translate-y-1 hover:translate-x-1 hover:opacity-80 transition-all ease-in-out"
-            target={contact?.email != true ? "_blank" : null}
+            target={contact?.email != true ? !contact?.noblank ? "_blank" : null : null}
             title={contact.id}
             rel="noreferrer noopener"
         >

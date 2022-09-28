@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { Writer, Contact, Project, ThemeSwitch, SVG } from '../components';
 
 import { constants } from '../constants';
-import { ArrowUpRightIcon, ChevronLeftIcon } from '../icons';
+import { ArrowUpRightIcon, ChevronLeftIcon, LinkIcon } from '../icons';
 
 
 const Landing = (props) => {
@@ -196,7 +196,7 @@ const Landing = (props) => {
           data-scroll-speed="6"
         >
           <h1 className="text-2xl sm:text-4xl font-bold mb-0 sm:mb-8">
-            Personal Projects
+            🛠️ Personal Projects
           </h1>
           {constants.landing.projects.map((project, index) =>
             <Project
@@ -241,6 +241,29 @@ const Landing = (props) => {
         data-scroll
         data-scroll-speed="8"
       />
+      <div className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-24">
+        <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12"
+          data-scroll
+          data-scroll-speed="1"
+        >
+          <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">✍️ My Medium Stories</h1>
+          <div className="grid w-full grid-cols-1" data-scroll-speed="2" data-scroll>
+            {constants.landing.mediumStories.map(story => <Link href={story.link} passHref key={story.id}>
+              <a target="_blank" rel="noreferrer noopener" className="flex flex-row items-center gap-6 dark:hover:bg-white/10 hover:bg-neutral-300/60 transition-all ease-in-out rounded-lg p-2">
+                <img src={"./images/" + story.id + ".png"} className="object-contain w-[200px] rounded-md" />
+                <div className="flex flex-col gap-2">
+                  <h2 className="text-lg sm:text-2xl font-medium">{story.title}</h2>
+                  <div className="flex items-start gap-2">
+                    <div className="flex flex-row items-center gap-2 text-black font-medium dark:text-white backdrop-blur-md bg-neutral-300/80 dark:bg-neutral-800 p-1 px-3 rounded-lg" >
+                      <span>{story.lang}</span>
+                    </div>
+                  </div>
+                </div>
+              </a></Link>)}
+          </div>
+        </div>
+      </div>
+
       {constants.landing.sections.map(section => <div
         key={"section" + section.id}
         className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-24"

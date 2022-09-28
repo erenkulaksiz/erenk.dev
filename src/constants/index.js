@@ -26,8 +26,7 @@ export const constants = {
             `${writerHighlight("I am making projects")} since 2018`,
             `${writerHighlight("I love")} open source`,
             `${writerHighlight("I'm writing JavaScript")} since 2019`,
-            `${writerHighlight("I always loved and designed")} eye catching designs`,
-            `${writerHighlight("I know how")} a good user experience works`,
+            `${writerHighlight("\"Less design\"")} is more design`,
         ],
         RANDOM_PHOTO_COUNT: 5,
         RANDOM_PHOTO_ON: false,
@@ -45,6 +44,12 @@ export const constants = {
                 icon: <GitHubIcon width={20} height={20} fill="currentColor" />
             },
             /*
+            {
+                title: "Freelance",
+                id: "freelance",
+                link: "/freelance",
+                noblank: true
+            },
             {
                 title: "Behance",
                 id: "behance",
@@ -100,54 +105,12 @@ export const constants = {
                 }]
             }
         ],
-        workedProjects: [
-            /*
-            {
-                workingOn: true,
-                desc: "One of Turkey's best dropshipping software as a service's frontend is being built by me.",
-                theme: {
-                    color: "gray",
-                    descColor: "#e6e6e6",
-                    text: "white",
-                    bgGradient: true,
-                },
-                image: "/images/pgrim_white.png",
-                tags: ["Work in Progress", "Web", "React"]
-            },
-            {
-                title: "WA Agent",
-                desc: "Track your family's wp online and offline activities.",
-                theme: {
-                    color: "#a913d6",
-                    descColor: "#e6e6e6",
-                    text: "white",
-                    bgGradient: true,
-                },
-                tags: ["Android", "iOS", "UI/UX", "Application", "React Native"],
-                link: "Behance",
-                linkURL: "https://www.behance.net/gallery/132069999/WA-Agent-UIUX",
-                image: "/images/wa_agent.png"
-            },
-            {
-                title: "Neepay",
-                desc: "Send and recieve money easly.",
-                theme: {
-                    color: "#b5800d",
-                    descColor: "#e6e6e6",
-                    text: "white",
-                    bgGradient: true,
-                },
-                tags: ["Android", "iOS", "UI/UX", "Banking", "Application", "React Native"],
-                link: "neepay.co",
-                linkURL: "https://neepay.co/",
-                image: "https://gcdn.bionluk.com/uploads/order/75dfa497-2d0b-464a-98ed-c74b8c7092d4.png",
-                contacts: [{
-                    title: "Screenshots",
-                    id: "screenshots",
-                    url: "https://drive.google.com/drive/folders/1X5E5iZJI5yePX8Z5h1pWuXzDfwSl2Rgf"
-                }]
-            },
-            */
-        ]
+        workedProjects: [],
+        mediumStories: [{
+            title: "React için daha zor Technical Interview soruları — Bölüm #1",
+            id: "react_daha_zor_1",
+            link: "https://medium.com/@erenkulaksiz/react-i%C3%A7in-daha-zor-technical-interview-sorular%C4%B1-b%C3%B6l%C3%BCm-1-4089358180a3",
+            lang: "Turkish",
+        }],
     }
 }

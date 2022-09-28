@@ -13,6 +13,7 @@
     @apply transition-colors;
     @apply ease-in-out;
     @apply duration-300;
+    font-family: Roboto;
   }
 }
 

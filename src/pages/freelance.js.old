@@ -1,0 +1,47 @@
+import Link from "next/link"
+
+const FreelanceList = [{
+    title: "I design everything",
+    price: "100",
+    priceTag: "USD"
+}, {
+    title: "I design everything, you watch",
+    price: "200",
+    priceTag: "USD"
+}, {
+    title: "I design, you advise",
+    price: "300",
+    priceTag: "USD"
+}, {
+    title: "You design, i watch",
+    price: "1000",
+    priceTag: "USD"
+}, {
+    title: "You design everything",
+    price: "1500",
+    priceTag: "USD"
+}]
+
+const Freelance = () => {
+    return (<div className="flex flex-col items-center justify-center w-full h-screen">
+        <div className="relative border-2 border-neutral-400/50 dark:border-neutral-800 p-8 rounded-lg">
+            <Link href="/">
+                <button className="absolute -top-10 left-0">{"< back"}</button>
+            </Link>
+            <div className="text-4xl font-medium">Yes i do freelance.</div>
+            <div className="text-xl mb-4 text-neutral-600 dark:text-neutral-400">Heres the price list:</div>
+            <div className="w-full h-[2px] bg-neutral-400/40 dark:bg-neutral-700 mb-4" />
+            <div className="flex flex-col">
+                {FreelanceList.map((fe, index) => {
+                    return <div className="flex flex-row justify-between gap-4 items-center">
+                        <div>{fe.title}</div>
+                        <div className="flex flex-1 bg-neutral-400/40 dark:bg-neutral-700 h-[2px]" />
+                        <div>{`${fe.price} ${fe.priceTag}`}</div>
+                    </div>
+                })}
+            </div>
+        </div>
+    </div>)
+}
+
+export default Freelance;
