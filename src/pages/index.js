@@ -1,4 +1,5 @@
 import { useRef, useEffect, useState } from 'react';
+import ReactDOM from "react-dom"
 import { useTheme } from 'next-themes'
 // Next
 import Head from 'next/head';
@@ -47,16 +48,16 @@ const Landing = (props) => {
         <title>erenkulaksiz</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {theme && !SSR && <ThemeSwitch
-        theme={theme}
-        onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
-      />}
       {/*<img
         src="/images/1.png"
         className="absolute object-cover h-64 -right-16 top-24 animate-[landingBounce_4s_ease-in-out_infinite]"
         data-scroll
         data-scroll-speed="4"
       />*/}
+      {theme && !SSR && ReactDOM.createPortal(<ThemeSwitch
+        theme={theme}
+        onClick={() => setTheme(theme == "dark" ? "light" : "dark")}
+      />, document.getElementsByTagName("body")[0])}
       <div
         className="flex flex-col relative items-center justify-center h-screen max-h-screen w-full"
       >
@@ -249,9 +250,9 @@ const Landing = (props) => {
           <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">✍️ My Medium Stories</h1>
           <div className="grid w-full grid-cols-1" data-scroll-speed="2" data-scroll>
             {constants.landing.mediumStories.map(story => <Link href={story.link} passHref key={story.id}>
-              <a target="_blank" rel="noreferrer noopener" className="flex flex-row items-center gap-6 dark:hover:bg-white/10 hover:bg-neutral-300/60 transition-all ease-in-out rounded-lg p-2">
-                <img src={"./images/" + story.id + ".png"} className="object-contain w-[200px] rounded-md" />
-                <div className="flex flex-col gap-2">
+              <a target="_blank" rel="noreferrer noopener" className="flex flex-col sm:flex-row items-center gap-6 dark:hover:bg-white/10 hover:bg-neutral-300/60 transition-all ease-in-out rounded-lg p-2">
+                <img src={"./images/" + story.id + ".png"} className="object-contain w-full sm:w-[200px] rounded-md" />
+                <div className="flex flex-col gap-2 w-full">
                   <h2 className="text-lg sm:text-2xl font-medium">{story.title}</h2>
                   <div className="flex items-start gap-2">
                     <div className="flex flex-row items-center gap-2 text-black font-medium dark:text-white backdrop-blur-md bg-neutral-300/80 dark:bg-neutral-800 p-1 px-3 rounded-lg" >

@@ -6,7 +6,7 @@ const Project = ({ project, ...rest }) => {
         {project.image && <div className="flex md:hidden items-center mb-4">
             <img src={project.image} className="object-contain w-24 rounded" />
         </div>}
-        <div className="flex flex-row gap-2 mb-2 text-white">
+        <div className="flex flex-row flex-wrap gap-2 mb-2 text-white">
             {project.tags && project.tags.map((tag, index) => (<span key={index} className="flex items-center justify-center text-xs backdrop-blur-sm bg-white/20 p-1 px-2 rounded-lg">
                 {tag}
             </span>))}

@@ -14,7 +14,7 @@ export const constants = {
         desc: "I'm a Frontend Developer",
         sections: [{
             sectionTitle: "🙌 About Me",
-            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago and <b>TypeScript</b> nearly 6 months ago."
+            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago and <b>TypeScript</b> nearly 8 months ago."
         }, {
             sectionTitle: "👋 Say Hello",
             sectionContent: "Send me a hi message from <a href='https://twitter.com/erenkulaksiz' class='text-blue-600 font-bold' target='_blank' rel='noreferrer'>Twitter</a> or send me an email to meet! I will answer any of your questions, 24/7 no fees."
@@ -38,7 +38,7 @@ export const constants = {
                 icon: <TwitterIcon width={20} height={20} fill="currentColor" />
             },
             {
-                title: "GitHub",
+                title: "Github",
                 id: "github",
                 link: "https://github.com/erenkulaksiz",
                 icon: <GitHubIcon width={20} height={20} fill="currentColor" />
@@ -58,7 +58,7 @@ export const constants = {
             },
             */
             {
-                title: "E-Mail",
+                title: "E-mail",
                 id: "email",
                 link: "mailto:erenkulaksz@gmail.com",
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
