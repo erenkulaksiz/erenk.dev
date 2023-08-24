@@ -44,8 +44,8 @@ export const constants = {
                 link: "https://github.com/erenkulaksiz",
                 icon: <GitHubIcon width={20} height={20} fill="currentColor" />
             },
-            /*
-            {
+
+            /*{
                 title: "Freelance",
                 id: "freelance",
                 link: "/freelance",
