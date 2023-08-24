@@ -3,7 +3,8 @@ import {
     GitHubIcon,
     TwitterIcon,
     BehanceIcon,
-    InstagramIcon
+    InstagramIcon,
+    LinkedinIcon,
 } from "../icons";
 
 const writerHighlight = (text) => `<span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>${text}</span>`;
@@ -14,7 +15,7 @@ export const constants = {
         desc: "I'm a Frontend Developer",
         sections: [{
             sectionTitle: "🙌 About Me",
-            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 2 years ago and <b>TypeScript</b> nearly 8 months ago."
+            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 3 years ago and <b>TypeScript</b> nearly 2 years ago."
         }, {
             sectionTitle: "👋 Say Hello",
             sectionContent: "Send me a hi message from <a href='https://twitter.com/erenkulaksiz' class='text-blue-600 font-bold' target='_blank' rel='noreferrer'>Twitter</a> or send me an email to meet! I will answer any of your questions, 24/7 no fees."
@@ -29,7 +30,7 @@ export const constants = {
             `${writerHighlight("\"Less design\"")} is more design`,
         ],
         RANDOM_PHOTO_COUNT: 5,
-        RANDOM_PHOTO_ON: false,
+        RANDOM_PHOTO_ON: true,
         contactList: [
             {
                 title: "Twitter",
@@ -50,13 +51,13 @@ export const constants = {
                 link: "/freelance",
                 noblank: true
             },
-            {
-                title: "Behance",
-                id: "behance",
-                link: "https://www.behance.net/erenkulaksiz",
-                icon: <BehanceIcon width={20} height={20} fill="currentColor" />
-            },
             */
+            {
+                title: "LinkedIn",
+                id: "linkedin",
+                link: "https://www.linkedin.com/in/erenkulaksiz",
+                icon: <LinkedinIcon width={20} height={20} fill="currentColor" />
+            },
             {
                 title: "E-mail",
                 id: "email",
@@ -66,6 +67,26 @@ export const constants = {
             }
         ],
         projects: [
+            {
+                title: "Nexys",
+                desc: "Logging & analytics from the future.",
+                theme: {
+                    color: "#879D00",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
+                tags: ["TypeScript", "NextJS", "NodeJS", "React Native"],
+                link: "nexys.app",
+                linkURL: "https://nexys.app",
+                image: "https://raw.githubusercontent.com/erenkulaksiz/nexys/master/apps/docs-v2/static/img/nexys_logo_light.png",
+                contacts: [{
+                    title: "GitHub",
+                    id: "github",
+                    url: "https://github.com/erenkulaksiz/Nexys",
+                    icon: <GitHubIcon width={20} height={20} fill="currentColor" />
+                }],
+            },
             {
                 title: "Notal",
                 desc: "Take notes, write todos and create your own workspaces.",

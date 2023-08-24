@@ -61,11 +61,12 @@ const Landing = (props) => {
       <div
         className="flex flex-col relative items-center justify-center h-screen max-h-screen w-full"
       >
-        {constants.landing.RANDOM_PHOTO_ON && <div className="absolute left-0 right-0 -bottom-20 bg-gradient-to-t dark:from-black from-white dark:to-transparent/90 to-white/70 top-0">
+        {constants.landing.RANDOM_PHOTO_ON && <div className="absolute -inset-5 bg-gradient-to-t dark:from-black from-white dark:to-transparent/70 to-white/20">
           <img
             src={`/images/random_${random}.jpeg`}
-            className="absolute w-full h-[calc(100%-10px)] -z-20 object-cover"
+            className="absolute w-full h-[calc(100%-10px)] -z-20 object-cover blur-[10px]"
           />
+          <div className="absolute -bottom-40 left-0 right-0 h-40 dark:bg-black bg-white"></div>
         </div>}
         <SVG
           className="absolute z-10 sm:flex hidden w-24 fill-blue-600/40 left-40 scale-50 top-40 animate-[landingBounce_2.5s_ease-in-out_infinite]"
@@ -98,9 +99,9 @@ const Landing = (props) => {
           data-scroll-speed="5"
         >
           <img
-            src="/images/eren.jpg"
+            src="/images/eren2.jpg"
             alt="eren"
-            className="object-contain w-32 transition-all ease-in-out rounded-lg"
+            className="object-cover w-48 h-48 transition-all ease-in-out rounded-lg"
           />
         </div>}
         <div
@@ -240,15 +241,12 @@ const Landing = (props) => {
         className="absolute w-24 fill-transparent stroke-white/70 stroke-2 right-24 bottom-[24%] animate-[landingBounce_4s_ease-in-out_infinite]"
         icon="hexa"
         data-scroll
-        data-scroll-speed="8"
+        data-scroll-speed="1"
       />
       <div className="flex flex-col items-center justify-center max-w-[1688px] w-full sm:mb-48 mb-8 mt-24">
-        <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12"
-          data-scroll
-          data-scroll-speed="1"
-        >
+        <div className="flex flex-col px-6 w-full font-extralight sm:px-0 sm:w-9/12">
           <h1 className="text-2xl sm:text-4xl font-bold mb-4 sm:mb-8">✍️ My Medium Stories</h1>
-          <div className="grid w-full grid-cols-1" data-scroll-speed="2" data-scroll>
+          <div className="grid w-full grid-cols-1">
             {constants.landing.mediumStories.map(story => <Link href={story.link} passHref key={story.id}>
               <a target="_blank" rel="noreferrer noopener" className="flex flex-col sm:flex-row items-center gap-6 dark:hover:bg-white/10 hover:bg-neutral-300/60 transition-all ease-in-out rounded-lg p-2">
                 <img src={"./images/" + story.id + ".png"} className="object-contain w-full sm:w-[200px] rounded-md" />
@@ -277,6 +275,7 @@ const Landing = (props) => {
           <span className="text-lg md:text-2xl" dangerouslySetInnerHTML={{ __html: section.sectionContent }} />
         </div>
       </div>)}
+
       <span className="mt-16 mb-8">erenk.dev website is <a href="https://github.com/erenkulaksiz/erenk.dev" rel="noreferrer" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
     </main>
   )
