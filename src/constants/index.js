@@ -30,7 +30,7 @@ export const constants = {
             `${writerHighlight("\"Less design\"")} is more design`,
         ],
         RANDOM_PHOTO_COUNT: 5,
-        RANDOM_PHOTO_ON: true,
+        RANDOM_PHOTO_ON: false,
         contactList: [
             {
                 title: "Twitter",
@@ -71,7 +71,7 @@ export const constants = {
                 title: "Nexys",
                 desc: "Logging & analytics from the future.",
                 theme: {
-                    color: "#879D00",
+                    color: "#afcc00",
                     descColor: "#e6e6e6",
                     text: "white",
                     bgGradient: true,

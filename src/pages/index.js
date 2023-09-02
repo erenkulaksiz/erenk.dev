@@ -208,12 +208,13 @@ const Landing = (props) => {
           )}
           <Link href={constants.landing.githubURL} passHref>
             <a target="_blank" className="bg-white dark:bg-neutral-800 shadow-lg group hover:-translate-y-1 hover:-translate-x-1 overflow-hidden transition-all ease-in-out z-50 w-full px-8 py-8 rounded-xl relative">
-              <h2 className="uppercase text-2xl">More to come</h2>
+              <div className="flex flex-row gap-1 items-center">
+                <span>GITHUB</span>
+                <ArrowUpRightIcon width={14} height={14} className="fill-neutral-700 dark:fill-neutral-400" />
+              </div>
+              <h2 className="uppercase text-2xl mt-1">More to come</h2>
               <div className="mt-2">
                 These are just my small projects yet. Bigger ones are on their way! Also theres more little projects i am working on GitHub which you can visit them by clicking this card.
-              </div>
-              <div className="absolute right-6 top-6">
-                <ArrowUpRightIcon width={16} height={16} className="fill-neutral-700 dark:fill-neutral-400" />
               </div>
             </a>
           </Link>
