@@ -9,11 +9,9 @@ const SEO = <>
     <meta property='mobile-web-app-capable' name="mobile-web-app-capable" content='yes' />
     <link rel='shortcut icon' href='/favicon.ico' />
     <meta property='twitter:card' name="twitter:card" content='summary' />
-    <meta property='twitter:url' name="twitter:url" content='https://erenk.dev' />
-    <meta property='twitter:creator' name="twitter:creator" content='@erencode' />
-    <meta property="twitter:site" name="twitter:site" content="@erencode" />
+    <meta property='twitter:url' name="twitter:url" content='https://eren.one' />
     <meta property='og:type' name="og:type" content='website' />
-    <meta property='og:site_name' name="og:site_name" content='erenk.dev' />
+    <meta property='og:site_name' name="og:site_name" content='eren.one' />
 </>;
 
 const InlineStyle = ({ assetPrefix, file, nonce }) => {

@@ -9,5 +9,6 @@ export { default as InstagramIcon } from "../../public/icons/instagram.svg";
 export { default as DarkIcon } from "../../public/icons/dark.svg";
 export { default as LightIcon } from "../../public/icons/light.svg";
 export { default as LinkedinIcon } from "../../public/icons/linkedin.svg";
+export { default as PlayStoreIcon } from "../../public/icons/playstore.svg";
 
 export { default as Abstract1 } from "../../public/icons/1.svg";

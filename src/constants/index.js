@@ -5,6 +5,7 @@ import {
     BehanceIcon,
     InstagramIcon,
     LinkedinIcon,
+    PlayStoreIcon,
 } from "../icons";
 
 const writerHighlight = (text) => `<span class='text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-pink-600 font-extrabold'>${text}</span>`;
@@ -15,10 +16,7 @@ export const constants = {
         desc: "I'm a Frontend Developer",
         sections: [{
             sectionTitle: "🙌 About Me",
-            sectionContent: "I'm a passionate software developer working as a <b>Frontend Developer</b> and currently located in Istanbul, Turkey. \n I've always loved visual stuff. I started off with making motion graphics for various customers and i was interested into programming, which i was building <b>Windows Forms via VisualBasic and working with C# back then.</b> After sometime later, i started merging my design and programming skills together and i discovered <b>JavaScript</b> nearly 3 years ago and <b>TypeScript</b> nearly 2 years ago."
-        }, {
-            sectionTitle: "👋 Say Hello",
-            sectionContent: "Send me a hi message from <a href='https://twitter.com/erenkulaksiz' class='text-blue-600 font-bold' target='_blank' rel='noreferrer'>Twitter</a> or send me an email to meet! I will answer any of your questions, 24/7 no fees."
+            sectionContent: "I'm a passionate <b>Frontend Developer</b> who enjoys converting designs into pixel-perfect code. I also enjoy learning new technologies and constantly striving to improve myself."
         }],
         descAttr: "",
         descAttrLink: "",
@@ -32,12 +30,6 @@ export const constants = {
         RANDOM_PHOTO_COUNT: 5,
         RANDOM_PHOTO_ON: false,
         contactList: [
-            {
-                title: "Twitter",
-                id: "twitter",
-                link: "https://twitter.com/erencode",
-                icon: <TwitterIcon width={20} height={20} fill="currentColor" />
-            },
             {
                 title: "Github",
                 id: "github",
@@ -61,12 +53,32 @@ export const constants = {
             {
                 title: "E-mail",
                 id: "email",
-                link: "mailto:erenkulaksz@gmail.com",
+                link: "mailto:me@eren.one",
                 icon: <EmailIcon width={18} height={18} fill="currentColor" />,
                 email: true,
             }
         ],
         projects: [
+            {
+                title: "Ayse.ai",
+                desc: "Astrology, tarot cards, numerology and more.",
+                theme: {
+                    color: "#1c003a",
+                    descColor: "#e6e6e6",
+                    text: "white",
+                    bgGradient: true,
+                },
+                tags: ["React Native", "NextJS", "Laravel", "Docker", "MongoDB"],
+                link: "ayse.ai",
+                linkURL: "https://ayse.ai",
+                image: "https://ayse.ai/images/icon.png",
+                contacts: [{
+                    title: "Play Store",
+                    id: "play-store",
+                    url: "https://play.google.com/store/apps/details?id=ai.ayse",
+                    icon: <PlayStoreIcon width={15} height={20} fill="currentColor" />
+                }],
+            },
             {
                 title: "Nexys",
                 desc: "Logging & analytics from the future.",
@@ -76,7 +88,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["TypeScript", "NextJS", "NodeJS", "React Native"],
+                tags: ["TypeScript", "NextJS", "Laravel", "Docker", "MongoDB"],
                 link: "nexys.app",
                 linkURL: "https://nexys.app",
                 image: "https://raw.githubusercontent.com/erenkulaksiz/nexys/master/apps/docs-v2/static/img/nexys_logo_light.png",
@@ -96,7 +108,7 @@ export const constants = {
                     text: "white",
                     bgGradient: true,
                 },
-                tags: ["Web", "TypeScript", "Open Source", "NextJS", "MongoDB"],
+                tags: ["TypeScript", "NextJS", "MongoDB"],
                 link: "notal.app",
                 linkURL: "https://notal.app",
                 image: "https://raw.githubusercontent.com/erenkulaksiz/Notal/master/brand/notal_logo_clean_white.png",

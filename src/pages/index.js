@@ -45,7 +45,7 @@ const Landing = (props) => {
     //data-scroll-container
     >
       <Head>
-        <title>erenkulaksiz</title>
+        <title>eren.one</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/*<img
@@ -277,7 +277,7 @@ const Landing = (props) => {
         </div>
       </div>)}
 
-      <span className="mt-16 mb-8">erenk.dev website is <a href="https://github.com/erenkulaksiz/erenk.dev" rel="noreferrer" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
+      <span className="mt-16 mb-8">eren.one website is <a href="https://github.com/erenkulaksiz/erenk.dev" rel="noreferrer" className='text-blue-600 font-bold' target='_blank'>open source.</a></span>
     </main>
   )
 }
